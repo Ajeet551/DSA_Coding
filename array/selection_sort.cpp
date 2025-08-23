@@ -29,5 +29,6 @@ int main() {
         cout << arr[i] << " ";
     }
     cout << endl;
+    delete []arr;
     return 0;
 }
