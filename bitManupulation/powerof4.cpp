@@ -1,11 +1,12 @@
 #include <iostream>
 using namespace std;
 bool powerof_4(int num) {
-    if ((num > 0) && ((num & (num - 1)) == 0) && !(num & 0xAAAAAAAA)) {
-        return true;
-    } else {
-        return false;
-    }
+    return num > 0 && (num & (num - 1)) == 0 && !(num & 0xAAAAAAAA);   
+    // if ((num > 0) && ((num & (num - 1)) == 0) && !(num & 0xAAAAAAAA)) {
+    //     return true;
+    // } else {
+    //     return false;
+    // }
 }
 int main() {
     int num;
