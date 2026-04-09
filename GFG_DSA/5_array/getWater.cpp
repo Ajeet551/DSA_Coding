@@ -17,7 +17,7 @@ using namespace std;
 //     return res;
 // }
 
-/* Method-2: Efficient Sol, TC: θ(n) */
+/* Method-2: Efficient Sol, TC: θ(n), Aux Space: θ(n) */
 int getWater(int arr[], int n) {
     int res = 0;
     int lMax[n], rMax[n];
